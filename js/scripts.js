@@ -19,7 +19,6 @@ allPlayers.push(new player(1))
 
 // referee neutral
 function switchTurns() {
-
   if (playerTurn === 0){
     allPlayers[0].addScore();
     if (allPlayers[0].totalScore >= 100) {
@@ -27,7 +26,7 @@ function switchTurns() {
     }
     playerTurn = 1;
   }
-
+  
   else {
     allPlayers[1].addScore();
     if (allPlayers[1].totalScore >= 100) {
@@ -35,6 +34,8 @@ function switchTurns() {
     }
     playerTurn = 0;
   }
+  displayScore();
+  
 } 
 
 
@@ -44,20 +45,35 @@ function switchTurns() {
 
 function diceRoll() {
   var random = Math.floor(Math.random() * 6) + 1;
+  console.log(random)
   if (random == 1){
     allPlayers[playerTurn].turnScore = 0;
     switchTurns();
   }
   else {
     allPlayers[playerTurn].turnScore += random; //YOU update the score
+  
 //return random; //give ME the number, and I'll do something with it somewhere else
   }
+  displayScore();
+}
+
+function displayScore() {
+  $("#score").html("Player: " + playerTurn + " Turn Score: " + allPlayers[playerTurn].turnScore);
+  $("#total-score").html("Player: " + playerTurn + " Total Score: " + allPlayers[playerTurn].totalScore);
 }
 
 
 //##################################################################
 
 $(document).ready(function() {
-  $("#roll").click(diceRoll());
-  $("#pass").click(switchTurns());
+  $("#roll").click(function(){
+    diceRoll();
+  });
+  $("#pass").click(function(){
+    switchTurns();
+  });
+  
+  
+  
 });
