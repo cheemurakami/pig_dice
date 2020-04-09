@@ -39,7 +39,7 @@ _{Fixed JavaScript bug below:
 
 ## Support and contact details
 
-_If you run our program and find any other bugs or issues in it's functionality or you want to add to this program we encourage you to reach out to either of us at: tylerbowerman@yahoo.com or kiwipom1031@gmail.com
+_If you run our program and find any other bugs or issues in it's functionality or you want to add to this program we encourage you to reach out to either of us at: Christopher or kiwipom1031@gmail.com
 
 ## Technologies Used
 
@@ -49,4 +49,4 @@ _HTML, CSS, Javascript, Bootstrap , jQuery._
 
 *This softwar is licensed under the MIT license [MIT](https://en.wikipedia.org/wiki/MIT_License)*
 
-Copyright (c) 2020 **_{Tyler Bowerman and Chisato Murakami}_**
+Copyright (c) 2020 **_{Christopher Huber and Chisato Murakami}_**
