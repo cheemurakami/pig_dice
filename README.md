@@ -6,7 +6,6 @@
 
 ## Description
 
-_The program will take inputted age of user, movie selected by user and selected showtime for movie and output a ticket price based on those three inputs._
 
 ## Project Specefications
 
@@ -22,8 +21,8 @@ _The program will take inputted age of user, movie selected by user and selected
 | **Spec 8: On roll 1: set this turn's score to 0, call pass turn function**  | |
 
 **Optional Specs: Computer AI**
-|   | age(26) movie title(Ground Zero) movie showtime(1700)|$18.00
-|  | age(65) movie title(Ground Zero) movie showtime(1700)|$14.40
+|   ||
+|  | |
 
 
 
